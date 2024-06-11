@@ -1,4 +1,4 @@
-let figura = prompt('De que figura desea encontrar el area? (Triangulo, Cuadrado, Rectangulo, Circulo y Paralelogramo')
+let figura = prompt('De que figura desea encontrar el area? (Triangulo, Cuadrado, Rectangulo, Circulo y Paralelogramo)')
 figura = figura.toLowerCase()
 const pi = 3.141592
 
@@ -9,14 +9,14 @@ switch (figura){
         alert('Calculando...');
         areaTri1 = b * h;
         areaTri2 = areaTri1 / 2;
-        alert('El area es = '+ areaTri2 + ' (unidad que tenga, sea cm m dm dam km)')
+        alert('El area es = '+ areaTri2 + ' (unidad que tenga, sea cm m dm dam km)^2')
         break;
 
     case 'cuadrado':
         let l = Number(prompt('Cual es el valor de cualquiera de los lados?'));
         areaCuad = l * l;
         alert('Calculando...');
-        alert('El area es = '+ areaCuad + ' (unidad que tenga, sea cm m dm dam km)');
+        alert('El area es = '+ areaCuad + ' (unidad que tenga, sea cm m dm dam km)^2');
         break;
     
     case 'rectangulo':
@@ -24,14 +24,14 @@ switch (figura){
         let a = Number(prompt('Cual es el valor del largo de la figura?'))
         areaRect = baseRect * a;
         alert('Calculando...');
-        alert('El area es = '+ areaRect + ' (unidad que tenga, sea cm m dm dam km)');
+        alert('El area es = '+ areaRect + ' (unidad que tenga, sea cm m dm dam km)^2');
         break;
 
     case 'circulo':
         let r = Number(prompt('Cual es el valor del radio?'))
         areaCirc = pi * r * r
         alert('Calculando...');
-        alert('El area es = '+ areaCirc + ' (unidad que tenga, sea cm m dm dam km)');
+        alert('El area es = '+ areaCirc + ' (unidad que tenga, sea cm m dm dam km)^2');
         break;
 
     case 'paralelogramo':
@@ -39,7 +39,7 @@ switch (figura){
         let hPar = Number(prompt('Cual es el valor de la altura?'))
         areaPar = basePar * hPar
         alert('Calculando...')
-        alert('El area es = ' + areaPar + ' (unidad que tenga, sea cm m dm dam km)')
+        alert('El area es = ' + areaPar + ' (unidad que tenga, sea cm m dm dam km)^2')
 
     
     default:
