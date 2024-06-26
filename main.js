@@ -4,28 +4,28 @@ let areas = {
 }
 
 function triangulo(b,h){
-    areaTri1 = b * h;
-    areaTri2 = areaTri1 / 2
-    return areaTri2;
+    let areaTri1 = b * h;
+    let areaTri2 = areaTri1 / 2
+    return areaTri2
 }
 
 function cuadrado(l){
-    areaCuad = l * l
+    let areaCuad = l * l
     return areaCuad
 }
 
 function rectangulo(baseRect, a){
-    areaRect = baseRect * a;
+    let areaRect = baseRect * a;
     return areaRect
 }
 
 function circulo(r){
-    areaCirc = pi * r * r;
+    let areaCirc = pi * r * r;
     return areaCirc
 }
 
 function paralelogramo(basePar, hPar){
-    areaPar= basePar * hPar
+    let areaPar= basePar * hPar
     return areaPar
 }
 let preguntar = true
@@ -39,47 +39,47 @@ while (preguntar ){
             let b = Number(prompt('Cual es el valor de la base?'));
             let h = Number(prompt('Cual es el valor de la altura?'));
             alert('Calculando...');
-            triangulo(b, h)
-            alert('El area es = '+ areaTri2 + ' (unidad que tenga, sea cm m dm dam km)^2')
-            areas.area1 = 'El area del triangulo obtenida es = ' + areaTri2
+            let areaTri3 = triangulo(b, h)
+            alert('El area es = '+ areaTri3 + ' (unidad que tenga, sea cm m dm dam km)^2')
+            areas.area1 = 'El area del triangulo obtenida es = ' + areaTri3
             preguntar = true
             break;
     
         case '2':
             let l = Number(prompt('Cual es el valor de cualquiera de los lados?'));
             alert('Calculando...');
-            cuadrado(l)
-            alert('El area es = '+ areaCuad + ' (unidad que tenga, sea cm m dm dam km)^2');
-            areas.area2 = 'El area del cuadrado obtenida es = ' + areaCuad
+            let areaCuad1 = cuadrado(l)
+            alert('El area es = '+ areaCuad1 + ' (unidad que tenga, sea cm m dm dam km)^2');
+            areas.area2 = 'El area del cuadrado obtenida es = ' + areaCuad1
             preguntar = true
             break;
         
         case '3':
             let baseRect = Number(prompt('Cual es el valor del ancho de la figura?'));
             let a = Number(prompt('Cual es el valor del largo de la figura?'))
-            rectangulo(baseRect, a)
+            let areaRect1 = rectangulo(baseRect, a)
             alert('Calculando...');
-            alert('El area es = '+ areaRect + ' (unidad que tenga, sea cm m dm dam km)^2');
-            areas.area3 = 'El area del rectangulo obtenida es = ' + areaRect
+            alert('El area es = '+ areaRect1 + ' (unidad que tenga, sea cm m dm dam km)^2');
+            areas.area3 = 'El area del rectangulo obtenida es = ' + areaRect1
             preguntar = true
             break;
     
         case '4':
             let r = Number(prompt('Cual es el valor del radio?'))
-            circulo(r)
+            let areaCirc1 = circulo(r)
             alert('Calculando...');
-            alert('El area es = '+ areaCirc + ' (unidad que tenga, sea cm m dm dam km)^2');
-            areas.area4 = 'El area del triangulo obtenida es = ' + areaCirc
+            alert('El area es = '+ areaCirc1 + ' (unidad que tenga, sea cm m dm dam km)^2');
+            areas.area4 = 'El area del triangulo obtenida es = ' + areaCirc1
             preguntar = true
             break;
     
         case '5':
             let basePar = Number(prompt('Cual es el valor de la base?'))
             let hPar = Number(prompt('Cual es el valor de la altura?'))
-            paralelogramo(basePar, hPar)
+            let areaPar1 = paralelogramo(basePar, hPar)
             alert('Calculando...')
-            alert('El area es = ' + areaPar + ' (unidad que tenga, sea cm m dm dam km)^2')
-            areas.area5 = 'El area del triangulo obtenida es = ' + areaPar
+            alert('El area es = ' + areaPar1 + ' (unidad que tenga, sea cm m dm dam km)^2')
+            areas.area5 = 'El area del triangulo obtenida es = ' + areaPar1
             preguntar = true
             break;
 
